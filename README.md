@@ -6,7 +6,7 @@ Although Skyline benefits from a couple JavaScript-specific features, it is poss
 
 ## Advantages
 
-1. Time complexity of `O(2N)`
+1. Time complexity of `O(n)`
 2. Excels at processing data sets with many duplicates
 3. Easy, concise implementation
 4. Not technically unstable since only raw numbers can be processed (currently)
@@ -52,9 +52,25 @@ function skyline(a) {
 ## NPM Usage
 
 ```bash
-$ npm i skyline-sort
+npm i skyline-sort
 ```
 In your JavaScript file:
 ```javascript
 var skyline = require('skyline-sort');
+```
+
+Note that the NPM version contains an input validation mechanism.
+
+```javascript
+module.exports = function (a) {
+  var b=[],c=0,i,j,z;
+
+  //This part right here. z declared above
+  if(!Array.isArray(a)) throw "Parameter is not an array."
+  for(z in a) if((a[z] == null) || (typeof a[z] == 'undefined') || isNaN(a[z])) throw `Array contains non-number ${a[z]} at position ${z}`;
+
+  for(i of a)b[i]=~~b[i]+1
+  for(i in b)for(;b[i]--;)a[c++]=i*1
+  return a
+}
 ```
