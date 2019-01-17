@@ -1,5 +1,5 @@
 function skyline(array) {
-  var array2 = [], counter = 0;
+  var array2 = [counter = 0];
   for(var j of array)
     array2[j] = (array2[j] || 0) + 1;
   for(var i in array2)
