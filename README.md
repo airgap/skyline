@@ -47,3 +47,14 @@ function skyline(a) {
   return a;
 }
 ```
+
+
+## NPM Usage
+
+```bash
+$ npm i skyline-sort
+```
+In your JavaScript file:
+```javascript
+var skyline = require('skyline-sort');
+```
