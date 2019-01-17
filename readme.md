@@ -19,16 +19,13 @@ Although Skyline benefits from a couple JavaScript-specific features, it is poss
 
 ```javascript
 function skyline(array) {
-  var array2 = [];
-  for(var j of array) {
+  var array2 = [], counter = 0;
+  for(var j of array)
     array2[j] = (array2[j] || 0) + 1;
-  }
-  array = [];
-  var counter = 0;
   for(var i in array2)
     for(var j = 0; j < array2[i]; j++)
       array[counter++]=i*1;
-    return array;
+  return array;
 }
 ```
 
@@ -46,7 +43,7 @@ function skyline(array) {
     //If array2 has no index of j, create it; if it does, add 1 to the value
     array2[j] = (array2[j] || 0) + 1;
 
-  //Enumerate over the temporary array. Copy over each index the number of times indicated by its value 
+  //Enumerate over the temporary array. Copy over each index the number of times indicated by its value
   for(var i in array2)
     for(var j = 0; j < array2[i]; j++)
       array[counter++]=i*1;
