@@ -1,4 +1,4 @@
-function skyline(array) {
+exports = function(array) {
   var array2 = [];
   for(var i in array) {
     var j = array[i];
@@ -10,4 +10,4 @@ function skyline(array) {
     for(var j = 0; j < array2[i]; j++)
       array[counter++]=i*1;
     return array;
-}
+};
