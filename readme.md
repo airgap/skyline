@@ -18,14 +18,11 @@ Although Skyline benefits from a couple JavaScript-specific features, it is poss
 ## The code
 
 ```javascript
-function skyline(array) {
-  var array2 = [], counter = 0;
-  for(var j of array)
-    array2[j] = (array2[j] || 0) + 1;
-  for(var i in array2)
-    for(var j = 0; j < array2[i]; j++)
-      array[counter++]=i*1;
-  return array;
+function skyline(a) {
+  var b=[],c=0,i,j
+  for(i of a)b[i]=~~b[i]+1
+  for(i in b)for(;b[i]--;)a[c++]=i*1
+  return a
 }
 ```
 
@@ -35,20 +32,17 @@ function skyline(array) {
 //Function is passed an array of integers
 function skyline(array) {
 
-  //Temporary array is created
-  var array2 = [], counter = 0;
+  //Declare temporary array, counter, and two indexes
+    var b=[],c=0,i,j
 
   //Enumerate over original array
-  for(var j of array)
-    //If array2 has no index of j, create it; if it does, add 1 to the value
-    array2[j] = (array2[j] || 0) + 1;
+  //If b has no index of i, create it; if it does, add 1 to the value
+  for(i of a)b[i]=~~b[i]+1
 
   //Enumerate over the temporary array. Copy over each index the number of times indicated by its value
-  for(var i in array2)
-    for(var j = 0; j < array2[i]; j++)
-      array[counter++]=i*1;
+  for(i in b)for(;b[i]--;)a[c++]=i*1
 
   //Array is sorted. Done.
-  return array;
+  return a;
 }
 ```
