@@ -1,6 +1,6 @@
 {
   "name": "skyline-sort",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Non-comparison sorting algorithm with O(2N) time complexity",
   "main": "index.js",
   "directories": {
@@ -16,12 +16,7 @@
   "keywords": [
     "sort",
     "sorting",
-    "algorithm",
-    "skyline",
-    "skyline",
-    "sort",
-    "time",
-    "complexity"
+    "skyline"
   ],
   "author": "",
   "license": "ISC",
