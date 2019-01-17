@@ -6,7 +6,7 @@ Although Skyline benefits from a couple JavaScript-specific features, it is poss
 
 ## Advantages
 
-1. A time complexity of `O(2N)`
+1. Time complexity of `O(2N)`
 2. Excels at processing data sets with many duplicates
 3. Easy, concise implementation
 4. Not technically unstable since only raw numbers can be processed (currently)
