@@ -1,4 +1,4 @@
-var skyline = require('../skyline.module.js');
+var skyline = require('../skyline-sort/index.js');
 
 var rndarray = [];
 
