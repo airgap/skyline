@@ -30,10 +30,11 @@ function skyline(a) {
 
 ```javascript
 //Function is passed an array of integers
-function skyline(array) {
+function skyline(a) {
 
   //Declare temporary array, counter, and two indexes
-    var b=[],c=0,i,j
+  //a and b are arrays, c is a counter, i and j are indexes
+  var b=[],c=0,i,j
 
   //Enumerate over original array
   //If b has no index of i, create it; if it does, add 1 to the value
