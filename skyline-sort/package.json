@@ -1,0 +1,32 @@
+{
+  "name": "skyline-sort",
+  "version": "1.0.0",
+  "description": "Non-comparison sorting algorithm with O(2N) time complexity",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node ./tests/spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airgap/skyline.git"
+  },
+  "keywords": [
+    "sort",
+    "sorting",
+    "algorithm",
+    "skyline",
+    "skyline",
+    "sort",
+    "time",
+    "complexity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airgap/skyline/issues"
+  },
+  "homepage": "https://github.com/airgap/skyline#readme"
+}

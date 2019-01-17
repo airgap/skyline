@@ -1,9 +1,6 @@
 var skyline = require('../skyline.module.js');
 
-var rndarray = [];
-
-for(var i = 0; i < 1000;i++)
-  rndarray[i]=~~(Math.random()*1000);
+var rndarray = {};
 
 console.log(rndarray)
 
